@@ -1,0 +1,14 @@
+POST  http://127.0.0.1:8000/api/v1/posts/123123/comment/
+Content-Type: application/json
+Authorization: Token 9e91be1e482d78abff109002ef0afa596cad10f8
+
+
+{
+    "text": "lingaaaaa1231231wqsaasddasaaaaaaaa"
+}
+###
+GET http://127.0.0.1:8000/api/v1/posts/1/comments/5
+Authorization: Token 9e91be1e482d78abff109002ef0afa596cad10f8
+###
+GET http://127.0.0.1:8000/api/v1/posts/1/comments
+Authorization: Token 9e91be1e482d78abff109002ef0afa596cad10f8

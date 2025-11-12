@@ -1,0 +1,21 @@
+POST http://127.0.0.1:8000/api/v1/posts/
+Content-Type: application/json
+Authorization: Token 9e91be1e482d78abff109002ef0afa596cad10f8
+
+{
+    "text": "lin112312323123gangu"
+}
+###
+PATCH  http://127.0.0.1:8000/api/v1/post/1/
+Content-Type: application/json
+
+{
+    "group": 1
+}
+
+###
+GET http://127.0.0.1:8000/api/v1/post/
+
+###
+
+GET http://127.0.0.1:8000/api/v1/post/1/
