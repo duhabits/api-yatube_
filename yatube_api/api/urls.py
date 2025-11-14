@@ -5,7 +5,7 @@ from rest_framework_nested import routers
 
 from .views import CommentViewSet, GroupViewSet, PostViewSet
 
-router_main = DefaultRouter()
+router_main = DefaultRouter('v1')
 router_main.register("posts", PostViewSet)
 router_main.register("groups", GroupViewSet)
 
