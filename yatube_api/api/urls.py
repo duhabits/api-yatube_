@@ -8,7 +8,6 @@ from .views import CommentViewSet, GroupViewSet, PostViewSet
 router_main = DefaultRouter('v1')
 router_main.register("posts", PostViewSet)
 router_main.register("groups", GroupViewSet)
-
 router_comment = routers.NestedSimpleRouter(
     router_main, "posts", lookup="post"
 )
